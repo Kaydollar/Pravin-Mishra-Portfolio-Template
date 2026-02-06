@@ -33,10 +33,36 @@ Original:
 <p>Crafted with <span>cloud</span> excellence by Pravin Mishra</p>
 ```
 
-Add this line (example):
+## Footer Deployment Details
+
+The portfolio website includes a footer showing:
+- Website version
+- Deploy date
+- Author name
+
+### Dynamic Deploy Date
+The deploy date is generated automatically on page load using JavaScript.
+
+### Code Snippet
+```html
+<footer>
+  Pravin Mishra Portfolio v1.0 — Deployed on 
+  <span id="deployDate"></span> — By Yinusa Kolawole
+</footer>
+
+<script>
+  const deployDateEl = document.getElementById("deployDate");
+  const today = new Date().toLocaleDateString("en-GB", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric"
+  });
+  deployDateEl.textContent = today;
+</script>
+
 
 ```html
-<p><strong>Deployed by:</strong> DMI Cohort 2 | Rahul Sharma | Group 4 | Week 1 | 16-01-2026</p>
+<p><strong>Deployed by:</strong> DMI Cohort 2 | Yinusa Kolawole Gbenga | Group 6 | Week 4 | 16-01-2026</p>
 ```
 
 ✅ This proof must be visible in your browser screenshot submission.
