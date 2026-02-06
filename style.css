@@ -1039,6 +1039,9 @@ section {
 .footer {
   background: #000;
   color: #fff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
   padding: 80px 20px 40px;
 }
 
@@ -1130,11 +1133,14 @@ section {
 
 .footer-bottom span {
   color: #facc15;
+  font-weight: 500;
 }
 
 /* Responsive */
 @media (max-width: 900px) {
   .footer-grid {
+    font-size: 13px;
+    padding: 16px 8px;
     grid-template-columns: 1fr;
   }
 
